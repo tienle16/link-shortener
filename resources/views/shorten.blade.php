@@ -51,6 +51,24 @@
                                 </div>
                             </div>
                         </form>
+                        <table class="table table-hover table-responsive">
+                            <tr class="info">
+                                <td>#</td>
+                                <td>URL</td>
+                                <td>Short URL</td>
+                                <td>Counter</td>
+                            </tr>
+                            @if ($shortUrls && $shortUrls->isNotEmpty())
+                                @foreach($shortUrls as $key => $shortUrl)
+                                    <tr>
+                                        <td>{{ ($key + 1) }}</td>
+                                        <td><a href="{{ $shortUrl->full_url }}" title="Click to open in new tab" target="_blank">{{ $shortUrl->full_url }}</a></td>
+                                        <td> <a href="{{ $shortUrl->full_url }}" title="Click to open in new tab" target="_blank">{{ request()->getHost() . '/' . $shortUrl->short_code }}</a> </td>
+                                        <td> {{ $shortUrl->counter }} </td>
+                                    </tr>
+                                @endforeach
+                            @endif
+                        </table>
                     </div>
                 </div>
             </div>

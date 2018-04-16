@@ -15,9 +15,10 @@ class CreateShortensTable extends Migration
     {
         Schema::create('shortens', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->string('full_url');
             $table->string('short_code', 10);
-            $table->integer('counter')->nullalbe('0');
+            $table->integer('counter')->nullalbe()->default(0);
             $table->timestamps();
         });
     }

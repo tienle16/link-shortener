@@ -15,6 +15,3 @@ Route::get('/', 'ShortenController@index')->name('clgt');
 Route::post('/shorten', 'ShortenController@shorten')->name('clgt.shorten');
 
 Auth::routes();
-Route::get('/test', function () {
-    echo '12312313';
-});
