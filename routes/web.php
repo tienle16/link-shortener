@@ -22,3 +22,5 @@ Auth::routes();
 Route::post('/shorten', 'ShortenController@shorten')->name('clgt.abc');
 Route::post('/shorten', 'ShortenController@shorten')->name('clgt.asss');
 Route::post('/shorten', 'ShortenController@shorten')->name('clgt.aaaa');
+Route::post('/shorten', 'ShortenController@shorten')->name('clgt.sas');
+Route::post('/shorten', 'ShortenController@shorten')->name('clgt.aadsdadaa');
