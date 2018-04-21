@@ -1,6 +1,6 @@
 <h1>Test go test</h1>
 @extends('layouts.app')
-
+<h2> Hello word</h2>
 @section('content')
     <div class="container">
         <div class="row">
