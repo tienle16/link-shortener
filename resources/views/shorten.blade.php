@@ -1,3 +1,4 @@
+<h1>Test go test</h1>
 @extends('layouts.app')
 
 @section('content')

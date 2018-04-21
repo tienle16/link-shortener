@@ -15,3 +15,5 @@ Route::get('/', 'ShortenController@index')->name('clgt');
 Route::post('/shorten', 'ShortenController@shorten')->name('clgt.shorten');
 
 Auth::routes();
+
+// Test commit branch in phpstorm
