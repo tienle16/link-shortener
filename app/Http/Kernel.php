@@ -22,7 +22,7 @@ class Kernel extends HttpKernel
     ];
 
     /**
-     * New commit test
+
      * The application's route middleware groups.
      *
      * @var array
