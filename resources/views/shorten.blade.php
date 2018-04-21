@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<h2> Hello word</h2>
 @section('content')
     <div class="container">
         <div class="row">

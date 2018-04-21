@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class ShortenController extends Controller
 {
     /**
+     *  Custom new line
      * ShortenController constructor.
      */
     public function __construct()
